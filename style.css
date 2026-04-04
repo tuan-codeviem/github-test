@@ -1,4 +1,105 @@
-*{
+
+body {
     font-family: sans-serif;
-    background-color: #F6F3EE;
+    background-color: #F6F3EE; 
+    color: #333;
+    line-height: 1.6;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* đẩy logo sang trái , menu ra giữa và user sang phải */ 
+    align-items: center;
+    padding: 15px 5%; /* tạo khoảng cách */ 
+    background-color: transparent; 
+    box-shadow: none; 
+}
+
+.logo {
+    color: #004d3d; 
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 15px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.nav-links a.active {
+    color: #004d3d;
+    border-bottom: 2px solid #004d3d; 
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-report {
+    background-color: #8b4513; 
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+}
+
+.user-name {
+    color: #333;
+    font-size: 14px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.footer {
+    padding: 60px 5%;
+    
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.newsletter-box input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: #E2DFD9; 
+    outline: none;
+}
+
+.btn-join {
+    position: absolute;
+    right: 5px;
+    background-color: #0C4D37; 
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+ .nav-links ::hover {
+    color: #004d3d; 
+    transition: 0.3s; 
+}  
