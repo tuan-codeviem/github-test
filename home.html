@@ -1,59 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset = "UTF-8">
-        <link  rel ="stylesheet" href ="home.css" >
-    </head>
-    <header class="navbar">
-    <div class="logo"> WildLife Guardian </div>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <header class="navbar">
+    <div class="logo">WildLife Guardian</div>
     <nav class="nav-links">
-        <a href="#" class="active">Home</a>
-        <a href="#">Species</a>
+      <a href="#" class="active">Home</a>
+      <a href="#">Species</a>
     </nav>
 
     <div class="user-section">
-        <button class="btn-report">Report Now</button>
-        <div class="user-info">
-            <span class="user-name">Viet Nguyen</span>
-            <img src="0.png" alt="Avatar" class="avatar">
-        </div>
+      <button class="btn-report">Report Now</button>
+      <div class="user-info">
+        <span class="user-name">Viet Nguyen</span>
+        <img src="0.png" alt="Avatar" class="avatar" />
+      </div>
     </div>
-       </header>
-        <footer class="footer">
-           <div class="footer-container">
-             <div class="footercolor">
-            <h2 class="footerlogo">WildLife Guardian</h2>
-            <p class="footer-desc">A global network of empathetic protectors committed to the safety and longevity of our world's precious fauna.</p>
-            <div class="social-icons">
-                <div class="icon-circle"><i class="fas fashare-alt"></i></div>
-                <div class="icon-circle"><i class="fas faglobe"></i></div>
+  </header>
+
+  <body>
+    <div class="container">
+      <header class="section-header">
+        <div class="header-text">
+          <h2>Guardian Field Notes</h2>
+          <p>
+            Stay updated with the latest victories, stories, and scientific
+            breakthroughs from our field units.
+          </p>
+        </div>
+      </header>
+
+      <div class="content-grid">
+        <article class="main-card">
+          <div class="main-image-wrapper">
+            <img
+              src="https://cdn.libemaweb.com/f/151320/2560x1920/932633421b/luipaard-panter-tussen-struiken-safaripark-beekse-bergen.jpg/m/1080x0/filters:fill(transparent):quality(80)"
+              alt="Leopard"
+            />
+            <span class="badge-green">SUCCESS STORY</span>
+          </div>
+          <div class="main-content">
+            <div class="meta-info">March 14, 2024 &bull; 8 min read</div>
+            <h3 class="main-title">
+              The Great Migration Support Project: Safely Guided 200+ Species.
+            </h3>
+            <p class="main-desc">
+              A detailed look at how our corridor initiatives protected record
+              numbers of migrating mammals this season through innovative GPS
+              tracking...
+            </p>
+          </div>
+        </article>
+
+        <div class="side-cards">
+          <article class="small-card">
+            <img
+              src="https://images.unsplash.com/photo-1549471013-3364d7220b75?q=80&w=400&auto=format&fit=crop"
+              alt="Owl"
+            />
+            <div class="small-card-content">
+              <span class="badge-orange">VET DIARIES</span>
+              <h4 class="small-title">
+                Nocturnal Guardians: Rehabilitating the Northern Saw-whet.
+              </h4>
+              <div class="author">By Dr. Elena Vance</div>
             </div>
-        </div>
+          </article>
 
-        <div class="footercolor">
-            <h3>Resources</h3>
-            <ul>
-                <li><a href="#">Donation Guide</a></li>
-                <li><a href="#">Rescue Protocols</a></li>
-                <li><a href="#">Field Journal</a></li>
-            </ul>
-        </div>
-
-        <div class="footercolor">
-            <h3>Legal</h3>
-            <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-            </ul>
-        </div>
-
-        <div class="footercolor">
-            <h3>Newsletter</h3>
-            <div class="newsletterbox">
-                <input type="email" placeholder="Email">
-                <button class="btnjoin">Join</button>
+          <article class="small-card">
+            <img
+              src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=400&auto=format&fit=crop"
+              alt="Volunteers"
+            />
+            <div class="small-card-content">
+              <span class="badge-orange">COMMUNITY</span>
+              <h4 class="small-title">
+                Youth Ambassadors: 500 New Guardians Sworn In This Month.
+              </h4>
+              <div class="author">By Mark Richardson</div>
             </div>
+          </article>
+
+          <article class="small-card">
+            <img
+              src="https://i.pinimg.com/736x/e2/07/8b/e2078be54495947309e0f68b59346f68.jpg"
+              alt="Fox"
+            />
+            <div class="small-card-content">
+              <span class="badge-orange">SCIENCE</span>
+              <h4 class="small-title">
+                Climate Adaptation: How Foxes are Changing Their Winter Habits.
+              </h4>
+              <div class="author">By Sarah Jenkins</div>
+            </div>
+          </article>
         </div>
+      </div>
     </div>
-</footer>
+
+    <section class="rhino-section">
+      <div class="rhino-card">
+        <div class="rhino-content">
+          <h2 class="rhino-title">The Rhino Return:<br />From Zero to Hero.</h2>
+          <p class="rhino-desc">
+            Through five years of relentless protection and community
+            surveillance, we've successfully reintroduced the Black Rhino to the
+            Eastern Valley.
+          </p>
+
+          <hr class="rhino-divider" />
+
+          <div class="rhino-stats">
+            <div class="stat-item">
+              <span class="stat-number">85%</span>
+              <span class="stat-label">POPULATION GROWTH</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">0</span>
+              <span class="stat-label">POACHING INCIDENTS</span>
+            </div>
+          </div>
+
+          <hr class="rhino-divider" />
+
+          <button class="btn-support">Support Future Rescues</button>
+        </div>
+
+        <div class="rhino-image-wrapper">
+          <div class="green-glow"></div>
+          <img
+            src="https://image.bnews.vn/MediaUpload/Medium/2025/07/29/102932-no-luc-bao-ton-loai-te-giac-quy-hiem-o-chau-phi.jpg"
+            alt="Black Rhino"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footercolor">
+        <h2 class="footerlogo">WildLife Guardian</h2>
+        <p class="footer-desc">
+          A global network of empathetic protectors committed to the safety and
+          longevity of our world's precious fauna.
+        </p>
+        <div class="social-icons">
+          <div class="icon-circle"><i class="fas fashare-alt"></i></div>
+          <div class="icon-circle"><i class="fas faglobe"></i></div>
+        </div>
+      </div>
+
+      <div class="footercolor">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">Donation Guide</a></li>
+          <li><a href="#">Rescue Protocols</a></li>
+          <li><a href="#">Field Journal</a></li>
+        </ul>
+      </div>
+
+      <div class="footercolor">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="footercolor">
+        <h3>Newsletter</h3>
+        <div class="newsletterbox">
+          <input type="email" placeholder="Email" />
+          <button class="btnjoin">Join</button>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>
