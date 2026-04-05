@@ -1053,8 +1053,8 @@ body {
   background-color: #ffffff;
   border-radius: 12px;
   overflow: hidden;
-  text-decoration: none !important;
-  color: inherit !important;
+  text-decoration: none ;
+  color: inherit ;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -1129,10 +1129,10 @@ body {
   display: flex;
   align-items: center;
   gap: 24px;
-  text-decoration: none !important;
-  color: inherit !important;
+  text-decoration: none ;
+  color: inherit ;
   transition: transform 0.2s ease;
-  background-color: transparent !important;
+  background-color: transparent ;
 }
 
 .small-card:hover {
@@ -1150,9 +1150,9 @@ body {
 .small-card-content {
   display: flex;
   flex-direction: column;
-  background-color: transparent !important;
-  background: none !important;
-  padding: 0 !important;
+  background-color: transparent ;
+  background: none;
+  padding: 0 ;
 }
 
 .badge-orange {
