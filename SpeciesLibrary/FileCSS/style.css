@@ -166,9 +166,6 @@ main{
 #endline3{
     font-size: 20px;
 }
-.speciesbuttonend{
-
-}
 .speciesbuttonend button{
     margin-top: 45px;
     padding: 20px 30px;
@@ -180,6 +177,14 @@ main{
     border-radius: 10px;
     font-weight: bold;
     font-size: 15px;
+}
+.PandaLink{
+    text-decoration: none;
+    color:white;
+}
+.PandaLink:hover{
+    background-color: white;
+    color: #004d3d;
 }
 .speciesbuttonend button:hover{
     background-color: white;
