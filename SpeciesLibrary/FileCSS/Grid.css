@@ -1,7 +1,7 @@
 .SpeciesGrid{
     display: grid;
     padding: 20px;
-    gap: 40px;
+    gap: 2%;
     grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
 }
 .SpeciesCard{
@@ -15,9 +15,12 @@
     display: flex;
     flex-direction: column;
     height: 420px;
-}
+    border: none;  /*xóa viền của card cho nó hiện đại*/
+} 
+
 .SpeciesCard:hover{
-    border:10px solid rgb(45, 168, 0);
+    box-shadow: 0 0 0 3px rgb(59, 68, 55);      /*T đổi border sang box-shadow nghe border nó làm bể bố cục*/
+    cursor: pointer;            
 }
 .SpeciesCard:hover .CardInfo .AnimalName{
     color: red;
@@ -65,9 +68,11 @@
 }
 .CardFooter .Category{
     color: #8B572A;
-    font-size: 15px;
+    font-size: 15px;        /*Font bold lại cái tên ở dưới với nút xem thêm cho nó đẹp*/
+    font-weight: bold;
 }
 .CardFooter a{
     text-decoration: none;
     color: #1A5336;
+    font-weight: bold;  /*Chỗ ni nữa*/
 }

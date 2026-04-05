@@ -120,29 +120,29 @@ main{
     display: flex;
 }
 .speciesline2 span{
-    max-width: 1100px;
-    font-size: 30px;
+    max-width: 61%;
+    font-size: 25px;
 }
 .speciesSearchBar{
-    margin-left: 14%;
-    margin-top: 5%;
+    margin-left: 16%;
+    margin-top: 3%;
     position: relative;
     display: inline-block;
 }
 .speciesSearchBar input{
     border: none;
     width: 130%;
-    height: 75%;
+    height: 130%;
     background-color: rgb(226, 226, 226);
     border-radius: 15px;
     padding-left: 40px;
     font-size: 15px;
-   
+   outline: none;
 }
 .search-icon{
     position: absolute;
     left: 15px;
-    top: 25%;
+    top: 40%;
 }
 .speciesblockend{
     margin-top: 50px;
@@ -197,5 +197,9 @@ main{
     width:700px;
     height: 400px;
     border-radius: 15px;
+}
+.speciesBlockLibarary{  /*Giãn khoảng cách của card với rìa ra ra cho khi mở nó không  bị mất định dạng 4 card 1 dòng*/
+   
+    padding: 2%;      
 }
 }
