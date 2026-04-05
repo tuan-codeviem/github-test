@@ -907,3 +907,137 @@ body {
   object-fit: cover;
   background-color: #f47b62;
 }
+.icon-circle {
+  width: 45px;
+  height: 45px;
+  background-color: #bdf0d4;
+  color: #175336;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.notification-badge {
+  width: 12px;
+  height: 12px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  border: 2px solid #ffffff;
+  z-index: 1;
+}
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.btn-primary:hover .btn-arrow {
+  transform: translateX(8px);
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  background-color: #113d28;
+  box-shadow: 0 15px 25px rgba(23, 83, 54, 0.3);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover .btn-arrow {
+  transform: translateX(8px);
+}
+
+.btn-secondary:hover {
+  background-color: #e6ebe9;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  border-color: #175336;
+}
+
+.btn-secondary:active {
+  transform: scale(0.98);
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.icon-circle {
+  width: 45px;
+  height: 45px;
+  background-color: #e6f6ef;
+  color: #1a5632;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon-circle:hover {
+  background-color: #1a5632;
+  color: #ffffff;
+  transform: translateY(-5px);
+}
+.support-btn {
+  transition: all 0.3s ease;
+}
+
+.support-btn:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.support-btn:active {
+  transform: translateY(-2px);
+}
+.btn-support {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-support {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.btn-support:hover .btn-arrow {
+  transform: translateX(8px);
+}
+
+.btn-support:hover {
+  transform: scale(1.05);
+  background-color: #92501a;
+  box-shadow: 0 15px 25px rgba(237, 132, 34, 0.3);
+}
+
+.btn-support:active {
+  transform: scale(0.98);
+}
