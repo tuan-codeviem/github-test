@@ -178,17 +178,14 @@ main{
     font-weight: bold;
     font-size: 15px;
 }
-.PandaLink{
-    text-decoration: none;
-    color:white;
-}
-.PandaLink:hover{
-    background-color: white;
-    color: #004d3d;
-}
+
 .speciesbuttonend button:hover{
     background-color: white;
     color: #004d3d;
+}
+.speciesbuttonend a {
+    text-decoration: none; 
+    color: inherit;          /*Dùng cái này để a luôn đổi màu theo thẻ button*/
 }
 .speciesblockend img{
    margin: 50px 0px 0px 150px;
