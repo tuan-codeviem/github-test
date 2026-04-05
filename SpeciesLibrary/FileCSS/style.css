@@ -123,18 +123,26 @@ main{
     max-width: 1100px;
     font-size: 30px;
 }
-.speciesline2 input{
-   margin-left: 450px;
-   height: 40px;
-   margin-top: 90px;
-   width: 400px;
-   border: none;
-   background-color: #d1d4d3;
-   cursor: pointer;
-   border-radius: 10px;
-   outline: none;
-   font-size: 23px;
-   padding: 12px 20px 12px 40px;
+.speciesSearchBar{
+    margin-left: 14%;
+    margin-top: 5%;
+    position: relative;
+    display: inline-block;
+}
+.speciesSearchBar input{
+    border: none;
+    width: 130%;
+    height: 75%;
+    background-color: rgb(226, 226, 226);
+    border-radius: 15px;
+    padding-left: 40px;
+    font-size: 15px;
+   
+}
+.search-icon{
+    position: absolute;
+    left: 15px;
+    top: 25%;
 }
 .speciesblockend{
     margin-top: 50px;
