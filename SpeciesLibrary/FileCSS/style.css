@@ -1,111 +1,103 @@
 
 body {
     font-family: sans-serif;
-    background-color: #F6F3EE; 
+    background-color: #FCF9F4; 
     color: #333;
     line-height: 1.6;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between; /* đẩy logo sang trái , menu ra giữa và user sang phải */ 
+    justify-content: space-between;
     align-items: center;
-    padding: 15px 5%; /* tạo khoảng cách */ 
-    background-color: transparent; 
-    box-shadow: none; 
+    padding: 20px 2%;
+    max-width: 1850px;
+    margin: 0 auto;
+    background-color: transparent;
 }
 
 .logo {
-    color: #004d3d; 
-    font-weight: bold;
-    font-size: 24px;
+    color: #0c4d37;
+    font-weight: 900;
+    font-size: 28px;
+    flex: 1;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex: 2;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #555;
-    margin: 0 15px;
-    font-weight: 500;
+    font-weight: 800;
+    font-size: 16px;
     padding-bottom: 5px;
+    transition: 0.3s;
+    position: relative;
 }
 
 .nav-links a.active {
-    color: #004d3d;
-    border-bottom: 2px solid #004d3d; 
+    color: #0c4d37;
+    border-bottom: 2px solid #0c4d37;
+}
+
+.nav-links a:hover {
+    color: #0c4d37;
 }
 
 .user-section {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: flex-end;
+    gap: 25px;
+    flex: 1;
 }
 
 .btn-report {
-    background-color: #8b4513; 
+    background-color: #92501a;
     color: white;
     border: none;
-    padding: 10px 25px;
-    border-radius: 25px;
-    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 800;
+    font-size: 15px;
     cursor: pointer;
+    box-shadow: 0 8px 20px rgba(146, 80, 26, 0.2);
+    transition: 0.3s;
+}
+
+.btn-report:hover {
+    background-color: #7a4214;
 }
 
 .user-info {
     display: flex;
     align-items: center;
-    gap: 10px;
-    border-left: 1px solid #ddd;
-    padding-left: 20px;
+    gap: 15px;
+    border-left: 2px solid #e1e8e5;
+    padding-left: 25px;
+    height: 40px;
 }
 
 .user-name {
     color: #333;
-    font-size: 14px;
+    font-weight: 800;
+    font-size: 15px;
 }
 
 .avatar {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
-}
-.footer {
-    padding: 60px 5%;
-.footercolor a{
-    text-decoration: none;
-    color: #71717A;
-}
-}
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    background-color: #f47b62;
 }
 
-.newsletter-box input {
-    width: 100%;
-    padding: 12px 15px;
-    border-radius: 25px;
-    border: none;
-    background-color: #E2DFD9; 
-    outline: none;
-}
-
-.btn-join {
-    position: absolute;
-    right: 5px;
-    background-color: #0C4D37; 
-    color: white;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
- .nav-links ::hover {
-    color: #004d3d; 
-    transition: 0.3s; 
-}  
+ 
 main{
     padding:60px 5%;
 .speciesblock1{
@@ -118,6 +110,7 @@ main{
 }
 .speciesline2{
     display: flex;
+    padding: 0px 0px 50px 0px;
 }
 .speciesline2 span{
     max-width: 65%;
@@ -145,14 +138,14 @@ main{
     top: 40%;
 }
 .speciesblockend{
-    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-top: 180px;
     display: flex;
     max-width: 1100;
     background-color: #e7e5e0;
     height: 500px;
     border-radius: 15px;
-    padding:20px 20px 20px 20px;
-    margin:50px auto;
+    padding:20px;
 }
 .speciesTextEnd{
     margin-top: 40px;
@@ -202,4 +195,42 @@ main{
    
     padding: 2%;      
 }
+}
+.footer{
+    background-color: #F6F3EE;
+    padding: 10px 0px 0px 0px;
+    height: 300px;
+}
+.speciesFooter{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.speciesFooterTitle {
+    padding: 40px 0px 0px 0px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #004d3d;
+}
+.speciesFooterText{
+    margin-top: 13px;
+    max-width: 20%;
+    color: #71717A;
+}
+.speciesFooterFeauter{
+    padding: 30px 0px 0px 0px;
+    display: flex;
+    gap: 60px;
+    color: #71717A;
+}
+.sFF:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.end{
+    padding: 40px;
+    max-width: 40%;
 }
