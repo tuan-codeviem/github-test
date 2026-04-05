@@ -22,8 +22,8 @@
     box-shadow: 0 0 0 3px rgb(59, 68, 55);      /*T đổi border sang box-shadow nghe border nó làm bể bố cục*/
     cursor: pointer;            
 }
-.SpeciesCard:hover .CardInfo .AnimalName{
-    color: red;
+.SpeciesCard:hover .AnimalName, .Category{
+    color:red;
     font-size: 20px;
 }
 .SpeciesCard:hover .CardFooter .Category{
@@ -59,6 +59,19 @@
     line-height: 1.5;
     margin-bottom: 16px;
 }
+.SpeciesCard:hover .ScientificName, .SpeciesCard:hover .Description{
+    animation: fadeUp 3s ; 
+}
+@keyframes fadeUp{
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50%,100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .CardFooter {
     display: flex;
     justify-content: space-between;
@@ -76,3 +89,4 @@
     color: #1A5336;
     font-weight: bold;  /*Chỗ ni nữa*/
 }
+/* Học CSS mới */
