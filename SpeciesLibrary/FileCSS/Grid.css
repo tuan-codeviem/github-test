@@ -1,0 +1,93 @@
+.SpeciesGrid{
+    display: grid;
+    padding: 20px;
+    gap: 5% 5%;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+}
+.SpeciesCard{
+    padding: 10px;
+    background-color: #FFFFFF;
+    border: 2px solid black;
+    border-radius: 16px;
+    overflow:  hidden;
+    width: auto;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    border: none;  /*xóa viền của card cho nó hiện đại*/
+} 
+
+.SpeciesCard:hover{
+    box-shadow: 0 0 0 3px rgb(59, 68, 55);      /*T đổi border sang box-shadow nghe border nó làm bể bố cục*/
+    cursor: pointer;            
+}
+.SpeciesCard:hover .AnimalName, .Category{
+    color:red;
+    font-size: 20px;
+}
+.SpeciesCard:hover .CardFooter .Category{
+    color: rgb(111, 0, 255);
+    font-size: 18px;
+}
+.CardImage{
+    width: 100%;
+    height: 200px;
+    border-radius: 16px;
+}
+.CardImage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    text-align: center;
+
+}
+.CardInfo{
+    width: 100%;
+    flex-grow: 1;
+}
+.CardInfo .AnimalName{
+    color: #1A5336;
+}
+.CardInfo .ScientificName{
+    color: rgb(164, 164, 164);
+    font-style: italic;
+    font-size: 13px;
+}
+.CardInfo .Description{
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+.SpeciesCard:hover .ScientificName, .SpeciesCard:hover .Description{
+    animation: fadeUp 3s ; 
+}
+@keyframes fadeUp{
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50%,100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.CardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+}
+.CardFooter .Category{
+    color: #8B572A;
+    font-size: 15px;        /*Font bold lại cái tên ở dưới với nút xem thêm cho nó đẹp*/
+    font-weight: bold;
+}
+.CardFooter a{
+    text-decoration: none;
+    color: #1A5336;
+    font-weight: bold;  /*Chỗ ni nữa*/
+}
+/* Học CSS mới */
